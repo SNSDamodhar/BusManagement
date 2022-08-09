@@ -1,0 +1,23 @@
+
+/* ------------  Form Style ------------*/
+ .background {
+    margin-top: 70px;
+    margin-bottom: 30px;
+} 
+
+.form-row {
+    margin-top: 5px;
+}
+
+.form-control {
+    border-radius:  10px;
+    text-align: center;
+}
+
+.form {
+    width: 25%;
+}
+
+.form1 {
+    width: 40%;
+}

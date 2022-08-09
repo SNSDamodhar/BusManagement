@@ -1,0 +1,86 @@
+<html>
+<head>
+
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="./validate.js"></script>
+
+	<style>
+		.background {
+		border-radius: 30px;
+		margin-top: 200px;
+		margin-bottom: 30px;
+		}
+
+		.form-row {
+			margin-top: 5px;
+		}
+
+		.form-control {
+			border-radius:  10px;
+			text-align: center;
+		}
+
+		.form {
+			width: 25%;
+		}
+
+	</style>
+
+</head>
+<body style="background: linear-gradient(to right, #9796f0 -20%, #fbc7d4 100%);">
+   	<div class="container" >
+		<div class="row justify-content-center background">
+			<form action="./redirect.php" method="POST" class="form" onsubmit="return validate()">
+
+				<div class="form-row align-items-center">
+					<div class="col-xs-3 col-sm-3">
+
+					</div>
+					<div class="col-xs-7 col-sm-7">
+						<h4>LOGIN</h4>
+					</div>
+				</div>
+
+				<div class="form-row align-items-center">
+					<div class="col-sm-12">
+						<input type="text" class="form-control" name="username" placeholder="Username" id="" maxlength="40" required>
+					</div>
+				</div>
+
+				<div class="form-row align-items-center">
+					<div class="col-sm-12">
+						<input type="password" class="form-control" name="password" placeholder="Password" id="" minlength="8" maxlength="20" required>
+					</div>
+				</div>
+						
+				<div class="form-row align-items-center">
+					<div class="col-sm-12">
+						
+						<select class="form-select form-select-sm form-control" aria-label=".form-select-sm example" name="loginAs" required>
+							<option value="Select LoginAs" selected>Select User</option>
+							<option value="Student">Student</option>
+							<option value="Admin">Admin</option>
+							<option value="Caretaker">Caretaker</option>
+						</select>
+					<div>
+				</div>
+
+				<div class="col-sm-12">
+					<button type="submit" class="btn btn-primary btn-sm btn-block" style="margin-bottom: 30px; margin-top: 20px;">Submit</button>
+				</div>
+						
+			</form>
+		</div>
+	</div>
+</body>
+</html>

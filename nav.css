@@ -1,0 +1,12 @@
+nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body {
+    background: linear-gradient(to right, #9796f0 -20%, #fbc7d4 100%);
+}
+
+nav{
+    background-color:rgb(41, 64, 109);
+}
